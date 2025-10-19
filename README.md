@@ -147,11 +147,6 @@ bridgespeak/
 │   └── presentation/             # API and Pipecat server
 │       ├── api/                  # FastAPI REST endpoints
 │       └── static/               # Generated illustrations and assets
-├── docs/                         # Documentation and educational stories
-│   ├── stories/                  # Feature stories and acceptance criteria
-│   ├── qa/                       # Quality assurance gates and reports
-│   ├── prd/                      # Product requirements and specifications
-│   └── architecture.md           # System architecture documentation
 ├── frontend/                     # React web application (Vite + Tailwind)
 │   ├── src/
 │   │   ├── components/           # Reusable UI components
@@ -171,8 +166,6 @@ bridgespeak/
 │   ├── tailwind.config.js        # Tailwind CSS configuration
 │   ├── postcss.config.js         # PostCSS configuration
 │   └── package.json              # Frontend dependencies
-├── scripts/                      # Utility scripts and tools
-│   └── test_gemini_image.py      # Lists models and generates educational illustrations
 ├── tests/                        # Unit, integration, e2e tests
 ├── bridgespeak_bot.py            # Main Pipecat server with educational context
 ├── pyproject.toml                # Python dependencies (uv)
@@ -321,15 +314,6 @@ The educational system is designed to be easily customizable:
 See [QUICKSTART.md](QUICKSTART.md#next-steps) for detailed customization examples.
 
 ## 📚 Learn More
-
-### Educational Resources
-- **Architecture Overview**: See `docs/architecture.md` for Clean Architecture design and educational service layers
-- **Scenario Library**: See `docs/stories/` for detailed educational scenarios and learning objectives
-- **Sample Sentences Analysis**: See `docs/sample-sentences-analysis.md` for comprehensive coverage analysis
-- **Quality Assurance**: See `docs/qa/` for QA gates, testing reports, and accessibility compliance
-- **Design System**: Explore the interactive style guide at `/style-guide` in the running application
-- **Responsive Demo**: Visit `/responsive-demo` to see mobile-first design patterns
-- **Baby Steps Implementation**: See `docs/baby-steps-sample-sentences-implementation.md` for trauma-informed development approach
 
 ### Development & Testing
 - **Run Development Server**: `cd frontend && npm run dev` - Fast Vite development server with HMR
