@@ -1,0 +1,349 @@
+/**
+ * Seamless Exit CSS for Trauma-Informed Design
+ * 
+ * Provides always-available, pressure-free exit functionality
+ */
+
+.seamless-exit {
+  position: relative;
+}
+
+.always-available-exit {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  color: #721c24;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 154, 158, 0.3);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.always-available-exit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 154, 158, 0.4);
+}
+
+.always-available-exit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.exit-icon {
+  font-size: 16px;
+}
+
+.exit-text {
+  font-size: 14px;
+}
+
+.exit-toggle-button {
+  background: #f8f9fa;
+  border: 2px solid #dee2e6;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.exit-toggle-button:hover {
+  background: #e9ecef;
+  border-color: #adb5bd;
+}
+
+.exit-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+  animation: fadeIn 0.3s ease;
+}
+
+.exit-modal {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  animation: slideUp 0.3s ease;
+}
+
+.exit-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.exit-header h3 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+.exit-header p {
+  margin: 0;
+  color: #666;
+  font-size: 1rem;
+}
+
+.exit-options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.exit-option {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 10px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+  width: 100%;
+}
+
+.exit-option:hover:not(:disabled) {
+  border-color: #667eea;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+}
+
+.exit-option:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.option-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.option-content {
+  flex: 1;
+}
+
+.option-content strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+.option-content p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.pause-option {
+  border-color: #ffc107;
+}
+
+.pause-option:hover:not(:disabled) {
+  border-color: #ffc107;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+}
+
+.gentle-exit {
+  border-color: #28a745;
+}
+
+.gentle-exit:hover:not(:disabled) {
+  border-color: #28a745;
+  box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
+}
+
+.break-exit {
+  border-color: #17a2b8;
+}
+
+.break-exit:hover:not(:disabled) {
+  border-color: #17a2b8;
+  box-shadow: 0 4px 15px rgba(23, 162, 184, 0.3);
+}
+
+.exit-footer {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #e9ecef;
+}
+
+.cancel-button {
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cancel-button:hover:not(:disabled) {
+  background: #5a6268;
+  transform: translateY(-1px);
+}
+
+.cancel-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.exiting-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+.exiting-indicator p {
+  margin: 0;
+  color: #667eea;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .always-available-exit {
+    top: 10px;
+    right: 10px;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+  
+  .exit-modal {
+    padding: 20px;
+    margin: 20px;
+  }
+  
+  .exit-option {
+    padding: 15px;
+  }
+  
+  .option-icon {
+    font-size: 20px;
+    margin-right: 12px;
+  }
+}
+
+/* Accessibility improvements */
+.exit-option:focus {
+  outline: 3px solid rgba(102, 126, 234, 0.5);
+  outline-offset: 2px;
+}
+
+.cancel-button:focus {
+  outline: 3px solid rgba(108, 117, 125, 0.5);
+  outline-offset: 2px;
+}
+
+.always-available-exit:focus {
+  outline: 3px solid rgba(255, 154, 158, 0.5);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .exit-modal {
+    border: 3px solid #000;
+  }
+  
+  .exit-option {
+    border-width: 3px;
+  }
+  
+  .always-available-exit {
+    border: 3px solid #000;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .exit-overlay,
+  .exit-modal,
+  .exit-option,
+  .always-available-exit,
+  .cancel-button {
+    animation: none;
+    transition: none;
+  }
+  
+  .spinner {
+    animation: none;
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "scenario_id": "class-presentation",
+    "transcript_id": "class-presentation_variant1_senior-infants",
+    "age_group": "senior-infants",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-18T15:00:00.000000+00:00",
+    "description": "Class presentation skills for senior-infants",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。让我们学习如何在班级里自信地介绍自己。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Say: 'Hello everyone, my name is Li Wei'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Hello everyone, my name is Li Wei",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! Very clear and confident!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "You can also say: 'I like playing football and drawing pictures'",
+      "language": "en-IE",
+      "timestamp": 1760574017.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "I like playing football and drawing pictures",
+      "language": "en-IE",
+      "timestamp": 1760574020.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "好棒! Sharing your interests helps make friends!",
+      "language": "mixed",
+      "timestamp": 1760574023.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

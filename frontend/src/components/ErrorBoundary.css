@@ -1,0 +1,79 @@
+/* Error Boundary Styles */
+.error-boundary {
+  padding: 2rem;
+  text-align: center;
+  background-color: #fff;
+  min-height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.error-content h2 {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.error-content p {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.error-button {
+  background-color: #A8D8A8;
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-height: 44px;
+}
+
+.error-button:hover,
+.error-button:focus {
+  background-color: #8fbc8f;
+  outline: 2px solid #A8D8A8;
+  outline-offset: 2px;
+}
+
+.error-details {
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.error-details summary {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.error-details summary:hover,
+.error-details summary:focus {
+  background-color: #e9ecef;
+  outline: 2px solid #A8D8A8;
+  outline-offset: 2px;
+}
+
+.error-stack {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 1rem;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  color: #495057;
+}

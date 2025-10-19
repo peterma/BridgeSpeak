@@ -1,0 +1,197 @@
+/**
+ * Friendly Loader Component Styles - Story 5.2
+ * 
+ * Child-friendly loading animation with bouncing dots and encouraging messages
+ */
+
+.friendly-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-6);
+}
+
+.friendly-loader__animation {
+  margin-bottom: var(--space-4);
+}
+
+.bouncing-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.dot {
+  border-radius: 50%;
+  animation: bounce 1.4s ease-in-out infinite;
+}
+
+/* Size variants */
+.friendly-loader--small .dot {
+  width: 8px;
+  height: 8px;
+}
+
+.friendly-loader--medium .dot {
+  width: 12px;
+  height: 12px;
+}
+
+.friendly-loader--large .dot {
+  width: 16px;
+  height: 16px;
+}
+
+/* Colorful dots with staggered animation */
+.dot--1 {
+  background: var(--primary-blue);
+  animation-delay: -0.32s;
+}
+
+.dot--2 {
+  background: var(--secondary-yellow);
+  animation-delay: -0.16s;
+}
+
+.dot--3 {
+  background: var(--accent-green);
+  animation-delay: 0s;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.friendly-loader__message {
+  color: var(--text-primary);
+  font-weight: var(--font-weight-medium);
+  margin: 0;
+  animation: gentle-pulse 2s ease-in-out infinite;
+  transition: opacity 0.3s ease;
+}
+
+/* Size-specific message styling */
+.friendly-loader--small .friendly-loader__message {
+  font-size: var(--font-size-sm);
+}
+
+.friendly-loader--medium .friendly-loader__message {
+  font-size: var(--font-size-base);
+}
+
+.friendly-loader--large .friendly-loader__message {
+  font-size: var(--font-size-lg);
+}
+
+/* Gentle pulse animation for message */
+@keyframes gentle-pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/* Screen reader only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .dot,
+  .friendly-loader__message {
+    animation: none;
+  }
+  
+  /* Provide alternative visual feedback */
+  .dot {
+    opacity: 0.7;
+  }
+  
+  .dot--1 {
+    opacity: 1;
+  }
+  
+  .friendly-loader__message {
+    opacity: 1;
+  }
+  
+  /* Simple fade for message changes */
+  .friendly-loader__message {
+    transition: opacity 0.5s ease;
+  }
+}
+
+/* High contrast mode */
+@media (prefers-contrast: high) {
+  .dot--1,
+  .dot--2,
+  .dot--3 {
+    background: ButtonText;
+    border: 1px solid ButtonText;
+  }
+  
+  .friendly-loader__message {
+    color: ButtonText;
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+/* Compact variant for inline use */
+.friendly-loader--compact {
+  flex-direction: row;
+  padding: var(--space-2) var(--space-4);
+  gap: var(--space-3);
+}
+
+.friendly-loader--compact .friendly-loader__animation {
+  margin-bottom: 0;
+}
+
+.friendly-loader--compact .friendly-loader__message {
+  font-size: var(--font-size-sm);
+}
+
+/* Overlay variant for full-screen loading */
+.friendly-loader--overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg-overlay);
+  z-index: 9998;
+  backdrop-filter: blur(4px);
+}
+
+.friendly-loader--overlay .friendly-loader__message {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.friendly-loader--overlay .dot {
+  width: 20px;
+  height: 20px;
+}

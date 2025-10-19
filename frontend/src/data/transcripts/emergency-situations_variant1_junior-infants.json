@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "scenario_id": "emergency-situations",
+    "transcript_id": "emergency-situations_variant1_junior-infants",
+    "age_group": "junior-infants",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-16T00:20:05.742426+00:00",
+    "description": "Comprehensive emergency-situations transcript for junior-infants",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。今天练习紧急求助。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Practice: 'Help, teacher!'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Please help me!",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "很好! That's grand! You're learning so well!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

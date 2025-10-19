@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "scenario_id": "ask-help",
+    "transcript_id": "ask-help_variant1_junior-infants",
+    "age_group": "junior-infants",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-16T00:20:05.679493+00:00",
+    "description": "Comprehensive ask-help transcript for junior-infants",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。今天我们来练习如何请求帮助。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Say: 'Please help me'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "I need help",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! Well done! You're doing great!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

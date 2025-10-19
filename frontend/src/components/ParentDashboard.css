@@ -1,0 +1,287 @@
+/**
+ * Parent Dashboard CSS for Trauma-Informed Sensitivity Controls
+ */
+
+.parent-dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-dark) 100%);
+  color: var(--text-on-primary);
+  border-radius: 10px;
+}
+
+.dashboard-header h2 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+}
+
+.dashboard-header p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1.1rem;
+}
+
+.message {
+  padding: 12px 16px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.message.success {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.child-selector {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+}
+
+.child-selector label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.child-selector select {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--primary-blue-light);
+  border-radius: 6px;
+  font-size: 16px;
+  background: var(--bg-card);
+}
+
+.child-selector select:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.sensitivity-settings {
+  background: var(--bg-card);
+  border: 1px solid var(--primary-blue-light);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 10px var(--hover-overlay);
+}
+
+.sensitivity-settings h3 {
+  margin-top: 0;
+  color: var(--text-primary);
+  border-bottom: 2px solid var(--primary-blue);
+  padding-bottom: 10px;
+}
+
+.setting-group {
+  margin-bottom: 25px;
+}
+
+.setting-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.setting-group input[type="text"],
+.setting-group input[type="number"],
+.setting-group select,
+.setting-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid var(--primary-blue-light);
+  border-radius: 6px;
+  font-size: 16px;
+  background: var(--bg-card);
+  transition: border-color 0.2s;
+  color: var(--text-primary);
+}
+
+.setting-group input[type="text"]:focus,
+.setting-group input[type="number"]:focus,
+.setting-group select:focus,
+.setting-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.setting-group input[type="checkbox"] {
+  margin-right: 8px;
+  transform: scale(1.2);
+}
+
+.setting-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.setting-description {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.quick-actions {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid var(--primary-blue-light);
+}
+
+.quick-actions h4 {
+  margin-bottom: 15px;
+  color: var(--text-primary);
+}
+
+.quick-actions button {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.anxiety-button {
+  background: linear-gradient(135deg, var(--secondary-yellow-light) 0%, var(--secondary-yellow) 100%);
+  color: var(--text-primary);
+}
+
+.anxiety-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 217, 61, 0.3);
+}
+
+.confidence-button {
+  background: linear-gradient(135deg, var(--accent-green-light) 0%, var(--accent-green) 100%);
+  color: var(--text-primary);
+}
+
+.confidence-button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(136, 229, 163, 0.3);
+}
+
+.quick-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.saving-indicator {
+  text-align: center;
+  padding: 15px;
+  background: var(--primary-blue-light);
+  color: var(--primary-blue-dark);
+  border-radius: 6px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.trauma-informed-info {
+  background: linear-gradient(135deg, var(--accent-green-light) 0%, var(--bg-secondary) 100%);
+  border: 2px solid var(--accent-green);
+  border-radius: 10px;
+  padding: 25px;
+  margin-top: 30px;
+}
+
+.trauma-informed-info h4 {
+  margin-top: 0;
+  color: var(--accent-green-dark);
+  font-size: 1.3rem;
+}
+
+.trauma-informed-info p {
+  color: var(--text-primary);
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.trauma-informed-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.trauma-informed-info li {
+  padding: 8px 0;
+  color: var(--accent-green-dark);
+  font-weight: 500;
+}
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .parent-dashboard {
+    padding: 15px;
+  }
+  
+  .dashboard-header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .sensitivity-settings {
+    padding: 20px;
+  }
+  
+  .quick-actions button {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Accessibility improvements */
+.setting-group input:focus,
+.setting-group select:focus,
+.setting-group textarea:focus {
+  box-shadow: 0 0 0 3px var(--focus-ring);
+}
+
+.quick-actions button:focus {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .parent-dashboard {
+    border: 2px solid #000;
+  }
+  
+  .setting-group input,
+  .setting-group select,
+  .setting-group textarea {
+    border-width: 3px;
+  }
+}

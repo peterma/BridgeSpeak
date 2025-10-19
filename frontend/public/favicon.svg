@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Background circle -->
+  <circle cx="16" cy="16" r="16" fill="#4F46E5"/>
+  
+  <!-- Bridge structure -->
+  <path d="M6 20 Q16 12 26 20" stroke="#FDE047" stroke-width="2" fill="none"/>
+  <path d="M6 22 Q16 14 26 22" stroke="#FDE047" stroke-width="1.5" fill="none"/>
+  
+  <!-- Bridge pillars -->
+  <rect x="15" y="16" width="2" height="8" fill="#FDE047"/>
+  <rect x="9" y="18" width="1.5" height="6" fill="#FDE047"/>
+  <rect x="21.5" y="18" width="1.5" height="6" fill="#FDE047"/>
+  
+  <!-- Educational elements - speech bubbles -->
+  <circle cx="8" cy="12" r="3" fill="#22C55E"/>
+  <path d="M8 15 L6 17 L10 17 Z" fill="#22C55E"/>
+  
+  <circle cx="24" cy="10" r="3" fill="#EF4444"/>
+  <path d="M24 13 L22 15 L26 15 Z" fill="#EF4444"/>
+  
+  <!-- Text indicators -->
+  <text x="8" y="14" text-anchor="middle" fill="white" font-family="Arial" font-size="6" font-weight="bold">中</text>
+  <text x="24" y="12" text-anchor="middle" fill="white" font-family="Arial" font-size="6" font-weight="bold">EN</text>
+</svg>

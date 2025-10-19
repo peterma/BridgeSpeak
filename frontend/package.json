@@ -1,0 +1,53 @@
+{
+  "name": "bridgespeak",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@pipecat-ai/client-js": "^1.4.0",
+    "@pipecat-ai/small-webrtc-transport": "^1.6.0",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-slot": "^1.2.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.546.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^7.9.4",
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss": "^3.4.18",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "scripts": {
+    "dev": "npm run copy-transcripts && vite",
+    "build": "npm run copy-transcripts && vite build",
+    "preview": "vite preview",
+    "copy-transcripts": "node copy-transcripts.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@tailwindcss/postcss": "^4.1.14",
+    "@vitejs/plugin-react": "^5.0.4",
+    "autoprefixer": "^10.4.21",
+    "playwright": "^1.56.1",
+    "postcss": "^8.5.6",
+    "vite": "^6.4.0"
+  }
+}

@@ -1,0 +1,81 @@
+/**
+ * SkipLink Component Styles - Design System
+ */
+
+.ds-skip-link {
+  position: absolute;
+  top: var(--space-4);
+  left: var(--space-4);
+  z-index: var(--z-index-tooltip);
+  
+  /* Hidden by default */
+  transform: translateY(-100vh);
+  
+  /* Styling */
+  background-color: var(--color-neutral-900);
+  color: var(--color-text-inverse);
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-normal);
+  white-space: nowrap;
+  box-shadow: var(--shadow-xl);
+  
+  /* Smooth transitions */
+  transition: transform var(--transition-fast);
+  
+  /* Ensure it's above everything */
+  outline: none;
+}
+
+.ds-skip-link:focus {
+  transform: translateY(0);
+  outline: 3px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.ds-skip-link:hover:focus {
+  background-color: var(--color-neutral-800);
+  transform: translateY(0) scale(1.05);
+}
+
+.ds-skip-link:active:focus {
+  background-color: var(--color-neutral-700);
+  transform: translateY(0) scale(0.98);
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .ds-skip-link {
+    background-color: #000;
+    color: #fff;
+    border: 2px solid #fff;
+  }
+  
+  .ds-skip-link:focus {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .ds-skip-link {
+    transition: none;
+  }
+  
+  .ds-skip-link:hover:focus,
+  .ds-skip-link:active:focus {
+    transform: translateY(0);
+  }
+}
+
+/* Print Styles */
+@media print {
+  .ds-skip-link {
+    display: none;
+  }
+}

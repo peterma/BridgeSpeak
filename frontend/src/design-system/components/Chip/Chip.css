@@ -1,0 +1,261 @@
+/**
+ * Chip Component Styles - Design System
+ */
+
+.ds-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-medium);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  transition: all var(--transition-base);
+  position: relative;
+  outline: none;
+}
+
+.ds-chip:focus-visible {
+  box-shadow: var(--shadow-focus);
+  z-index: 1;
+}
+
+/* Size Variants */
+.ds-chip--small {
+  font-size: var(--font-size-xs);
+  padding: var(--space-1) var(--space-2);
+  min-height: 1.25rem; /* 20px */
+}
+
+.ds-chip--medium {
+  font-size: var(--font-size-sm);
+  padding: var(--space-2) var(--space-3);
+  min-height: 1.5rem; /* 24px */
+}
+
+.ds-chip--large {
+  font-size: var(--font-size-base);
+  padding: var(--space-2) var(--space-4);
+  min-height: 2rem; /* 32px */
+}
+
+/* Color Variants */
+.ds-chip--default {
+  background-color: var(--color-background-subtle);
+  color: var(--color-text-primary);
+  border-color: var(--color-border);
+}
+
+.ds-chip--primary {
+  background-color: var(--color-primary-light);
+  color: var(--color-text-primary);
+  border-color: var(--color-primary);
+}
+
+.ds-chip--secondary {
+  background-color: var(--color-secondary-light);
+  color: var(--color-text-primary);
+  border-color: var(--color-secondary);
+}
+
+.ds-chip--accent {
+  background-color: var(--color-accent-light);
+  color: var(--color-text-primary);
+  border-color: var(--color-accent);
+}
+
+.ds-chip--success {
+  background-color: var(--color-success);
+  color: var(--color-success-text);
+  border-color: var(--color-success-border);
+}
+
+.ds-chip--info {
+  background-color: var(--color-info);
+  color: var(--color-info-text);
+  border-color: var(--color-info-border);
+}
+
+.ds-chip--warning {
+  background-color: var(--color-warning);
+  color: var(--color-warning-text);
+  border-color: var(--color-warning-border);
+}
+
+.ds-chip--error {
+  background-color: var(--color-error);
+  color: var(--color-error-text);
+  border-color: var(--color-error-border);
+}
+
+/* Selected State */
+.ds-chip--selected.ds-chip--default {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  border-color: var(--color-primary-hover);
+}
+
+.ds-chip--selected.ds-chip--primary {
+  background-color: var(--color-primary);
+  color: var(--color-text-primary);
+  border-color: var(--color-primary-hover);
+}
+
+.ds-chip--selected.ds-chip--secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-text-primary);
+  border-color: var(--color-secondary-hover);
+}
+
+.ds-chip--selected.ds-chip--accent {
+  background-color: var(--color-accent);
+  color: var(--color-text-primary);
+  border-color: var(--color-accent-hover);
+}
+
+/* Interactive States */
+.ds-chip--clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.ds-chip--clickable:hover:not(.ds-chip--disabled) {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.ds-chip--clickable:active:not(.ds-chip--disabled) {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Disabled State */
+.ds-chip--disabled {
+  opacity: var(--opacity-disabled);
+  cursor: var(--cursor-disabled);
+  pointer-events: none;
+}
+
+/* Icon Support */
+.ds-chip__icon {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.ds-chip__icon--left {
+  margin-left: calc(var(--space-1) * -1);
+}
+
+/* Content */
+.ds-chip__content {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+/* Remove Button */
+.ds-chip__remove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: currentColor;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: calc(var(--space-1) * -1);
+  margin-left: var(--space-1);
+  font-size: 1.1em;
+  line-height: 1;
+  transition: all var(--transition-fast);
+  outline: none;
+  position: relative;
+}
+
+.ds-chip__remove:hover:not(:disabled) {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.ds-chip__remove:focus-visible {
+  background-color: rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 2px currentColor;
+}
+
+.ds-chip__remove:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.ds-chip__remove:disabled {
+  opacity: var(--opacity-disabled);
+  cursor: var(--cursor-disabled);
+}
+
+/* Removable Variant Adjustments */
+.ds-chip--removable.ds-chip--small {
+  padding-right: var(--space-1);
+}
+
+.ds-chip--removable.ds-chip--medium {
+  padding-right: var(--space-2);
+}
+
+.ds-chip--removable.ds-chip--large {
+  padding-right: var(--space-3);
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+  .ds-chip {
+    border-width: 2px;
+  }
+  
+  .ds-chip--selected {
+    border-color: currentColor;
+  }
+  
+  .ds-chip__remove:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 1px;
+  }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .ds-chip {
+    transition: none;
+  }
+  
+  .ds-chip--clickable:hover,
+  .ds-chip--clickable:active {
+    transform: none;
+  }
+  
+  .ds-chip__remove {
+    transition: none;
+  }
+  
+  .ds-chip__remove:hover,
+  .ds-chip__remove:active {
+    transform: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .ds-chip {
+    background: none !important;
+    color: #000 !important;
+    border: 1px solid #000 !important;
+    box-shadow: none !important;
+    transform: none !important;
+  }
+  
+  .ds-chip__remove {
+    display: none;
+  }
+}

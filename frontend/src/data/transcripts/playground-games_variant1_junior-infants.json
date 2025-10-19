@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "scenario_id": "playground-games",
+    "transcript_id": "playground-games_variant1_junior-infants",
+    "age_group": "junior-infants",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-18T23:28:18.469Z",
+    "description": "playground-games transcript for junior-infants",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。让我们一起学习。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Say: 'Hello'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Hello",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! Well done!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "You can also say: 'Thank you'",
+      "language": "en-IE",
+      "timestamp": 1760574017.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Thank you",
+      "language": "en-IE",
+      "timestamp": 1760574020.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "好棒! Keep practicing!",
+      "language": "mixed",
+      "timestamp": 1760574023.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

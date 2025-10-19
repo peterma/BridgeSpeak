@@ -1,0 +1,45 @@
+{
+  "metadata": {
+    "scenario_id": "intro-yourself",
+    "transcript_id": "intro-yourself_variant1_junior-infants",
+    "age_group": "junior-infants",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-16T00:20:05.650867+00:00",
+    "description": "Comprehensive intro-yourself transcript for junior-infants",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。让我们学习如何介绍自己。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Say: 'Hello, I am [name]'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Hello, I am Li Wei. I am 6 years old.",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! You're getting better! Well done!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

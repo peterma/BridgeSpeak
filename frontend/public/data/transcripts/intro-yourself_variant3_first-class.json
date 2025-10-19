@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "scenario_id": "intro-yourself",
+    "transcript_id": "intro-yourself_variant3_first-class",
+    "age_group": "first-class",
+    "difficulty_variant": "variant3",
+    "created_at": "2025-10-16T00:20:05.661928+00:00",
+    "description": "Comprehensive intro-yourself transcript for first-class",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。今天我们来练习介绍自己。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Practice: 'I am [name]'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Hello, I am Li Wei. I am 6 years old.",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "很好! That's grand! You're learning so well!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Now try: 'I am 6 years old'",
+      "language": "en-IE",
+      "timestamp": 1760574017.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Hello, I am Li Wei. I am 6 years old.",
+      "language": "en-IE",
+      "timestamp": 1760574020.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! Well done! You're doing great!",
+      "language": "mixed",
+      "timestamp": 1760574023.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

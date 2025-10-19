@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "scenario_id": "family-outing-planning",
+    "transcript_id": "family-outing_variant1_second-class",
+    "age_group": "second-class",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-18T15:00:00.000000+00:00",
+    "description": "Planning family outings and activities for second-class",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。让我们学习如何规划家庭出游。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Say: 'There's a school fair on Saturday'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "There's a school fair on Saturday",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! Sharing events helps family stay connected!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "You can also say: 'Can we visit the park this weekend?'",
+      "language": "en-IE",
+      "timestamp": 1760574017.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Can we visit the park this weekend?",
+      "language": "en-IE",
+      "timestamp": 1760574020.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "好棒! Family adventures create wonderful memories!",
+      "language": "mixed",
+      "timestamp": 1760574023.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}

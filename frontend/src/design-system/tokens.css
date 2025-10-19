@@ -1,0 +1,230 @@
+/**
+ * Design System Tokens - Story 4.3.5
+ * 
+ * CSS Custom Properties for consistent theming across the application.
+ * Follows trauma-informed design principles with gentle, accessible colors.
+ */
+
+:root {
+  /* Child-Friendly Color Palette - Story 5.1 - WCAG AA Compliant */
+  /* Primary Colors - Soft Blues for trust and calm */
+  --primary-blue: #0F7A6B;         /* Dark enough for white text */
+  --primary-blue-light: #4ECDC4;   /* Original lighter shade */
+  --primary-blue-dark: #0A5A4E;    /* Even darker for high contrast */
+  
+  /* Secondary Colors - Cheerful Yellows for happiness */
+  --secondary-yellow: #B8860B;     /* Darker gold for accessibility */
+  --secondary-yellow-light: #FFD93D; /* Original bright yellow */
+  --secondary-yellow-dark: #9A7209; /* Dark gold */
+  
+  /* Accent Colors - Gentle Greens for growth */
+  --accent-green: #2D8B47;         /* Darker green for better contrast */
+  --accent-green-light: #88E5A3;   /* Original light green */
+  --accent-green-dark: #1E5F31;    /* Dark green */
+  
+  /* Background Colors */
+  --bg-primary: #FFF8E7;      /* Light cream main background */
+  --bg-secondary: #F5F5F5;    /* Light gray secondary */
+  --bg-card: #FFFFFF;         /* Pure white for cards */
+  --bg-overlay: rgba(255, 248, 231, 0.95); /* Semi-transparent overlay */
+  
+  /* Text Colors */
+  --text-primary: #2D3748;    /* Dark gray for primary text */
+  --text-secondary: #4A5568;  /* Medium gray for secondary text */
+  --text-muted: #718096;      /* Light gray for muted text */
+  --text-on-primary: #FFFFFF; /* White text on colored backgrounds */
+  
+  /* Interactive States */
+  --hover-overlay: rgba(78, 205, 196, 0.1);
+  --active-overlay: rgba(78, 205, 196, 0.2);
+  --focus-ring: rgba(78, 205, 196, 0.5);
+
+  /* Legacy Support - Map new colors to existing variables */
+  --color-primary: var(--primary-blue);
+  --color-primary-hover: var(--primary-blue-dark);
+  --color-primary-active: var(--primary-blue-dark);
+  --color-primary-light: var(--primary-blue-light);
+  
+  --color-secondary: var(--accent-green);
+  --color-secondary-hover: var(--accent-green-dark);
+  --color-secondary-active: var(--accent-green-dark);
+  --color-secondary-light: var(--accent-green-light);
+  
+  --color-accent: var(--secondary-yellow);
+  --color-accent-hover: var(--secondary-yellow-dark);
+  --color-accent-active: var(--secondary-yellow-dark);
+  --color-accent-light: var(--secondary-yellow-light);
+  
+  /* Neutral Colors - High Contrast & Accessible */
+  --color-neutral-50: #f8f9fa;
+  --color-neutral-100: #e9ecef;
+  --color-neutral-200: #dee2e6;
+  --color-neutral-300: #ced4da;
+  --color-neutral-400: #adb5bd;
+  --color-neutral-500: #6c757d;
+  --color-neutral-600: #495057;
+  --color-neutral-700: #343a40;
+  --color-neutral-800: #212529;
+  --color-neutral-900: #1a1e23;
+  
+  /* Semantic Colors */
+  --color-success: #d4edda;
+  --color-success-text: #155724;
+  --color-success-border: #c3e6cb;
+  
+  --color-info: #e3f2fd;
+  --color-info-text: #1565c0;
+  --color-info-border: #bbdefb;
+  
+  --color-warning: #fff3cd;
+  --color-warning-text: #856404;
+  --color-warning-border: #ffeaa7;
+  
+  --color-error: #f8d7da;
+  --color-error-text: #721c24;
+  --color-error-border: #f5c6cb;
+  
+  /* Text Colors */
+  --color-text-primary: var(--color-neutral-800);
+  --color-text-secondary: var(--color-neutral-600);
+  --color-text-muted: var(--color-neutral-500);
+  --color-text-inverse: #ffffff;
+  
+  /* Background Colors */
+  --color-background: var(--bg-primary);    /* Light cream main background */
+  --color-background-subtle: var(--bg-secondary); /* Light gray secondary */
+  --color-background-muted: var(--bg-card);  /* Pure white for cards */
+  
+  /* Border Colors */
+  --color-border: var(--color-neutral-200);
+  --color-border-subtle: var(--color-neutral-100);
+  --color-border-strong: var(--color-neutral-300);
+  
+  /* Focus Colors - High Contrast for Accessibility */
+  --color-focus: var(--primary-blue);
+  --color-focus-ring: var(--focus-ring);
+  
+  /* Typography Scale */
+  --font-family-primary: 'Noto Sans SC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-family-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+  
+  --font-size-xs: 0.75rem;    /* 12px */
+  --font-size-sm: 0.875rem;   /* 14px */
+  --font-size-base: 1rem;     /* 16px */
+  --font-size-lg: 1.125rem;   /* 18px */
+  --font-size-xl: 1.25rem;    /* 20px */
+  --font-size-2xl: 1.5rem;    /* 24px */
+  --font-size-3xl: 1.875rem;  /* 30px */
+  --font-size-4xl: 2.25rem;   /* 36px */
+  --font-size-5xl: 3rem;      /* 48px */
+  
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.25;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  
+  /* Spacing Scale - 8px base unit */
+  --space-0: 0;
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  --space-20: 5rem;     /* 80px */
+  --space-24: 6rem;     /* 96px */
+  --space-32: 8rem;     /* 128px */
+  
+  /* Border Radius */
+  --radius-none: 0;
+  --radius-sm: 0.125rem;   /* 2px */
+  --radius-base: 0.25rem;  /* 4px */
+  --radius-md: 0.375rem;   /* 6px */
+  --radius-lg: 0.5rem;     /* 8px */
+  --radius-xl: 0.75rem;    /* 12px */
+  --radius-2xl: 1rem;      /* 16px */
+  --radius-3xl: 1.5rem;    /* 24px */
+  --radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  
+  /* Focus Ring */
+  --shadow-focus: 0 0 0 3px var(--color-focus-ring);
+  
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 200ms ease;
+  --transition-slow: 300ms ease;
+  
+  /* Z-Index Scale */
+  --z-index-dropdown: 1000;
+  --z-index-sticky: 1020;
+  --z-index-fixed: 1030;
+  --z-index-modal-backdrop: 1040;
+  --z-index-modal: 1050;
+  --z-index-popover: 1060;
+  --z-index-tooltip: 1070;
+  
+  /* Interactive States */
+  --opacity-disabled: 0.6;
+  --cursor-disabled: not-allowed;
+  
+  /* Breakpoints (for reference in JS) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-primary: #8B0000;          /* Dark red for high contrast */
+    --color-secondary: #006400;        /* Dark green for high contrast */
+    --color-accent: #FF8C00;           /* Dark orange for high contrast */
+    --color-border: #000000;
+    --color-border-strong: #000000;
+    --color-text-primary: #000000;
+    --color-text-secondary: #000000;
+  }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: none;
+    --transition-base: none;
+    --transition-slow: none;
+  }
+}
+
+/* Print Mode */
+@media print {
+  :root {
+    --color-primary: #000000;
+    --color-secondary: #000000;
+    --color-accent: #000000;
+    --color-background: #ffffff;
+    --shadow-sm: none;
+    --shadow-base: none;
+    --shadow-md: none;
+    --shadow-lg: none;
+    --shadow-xl: none;
+    --shadow-2xl: none;
+  }
+}

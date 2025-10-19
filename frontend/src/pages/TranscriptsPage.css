@@ -1,0 +1,150 @@
+/* TranscriptsPage Component Styles */
+
+.transcripts-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 2rem 0;
+}
+
+.transcripts-page-header {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #667eea;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  color: #5a67d8;
+  text-decoration: underline;
+}
+
+.back-button:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.header-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0 0 1rem 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.scenario-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin: 0 0 1rem 0;
+}
+
+.scenario-description {
+  font-size: 1.1rem;
+  color: #718096;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.transcripts-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .transcripts-page {
+    padding: 1rem 0;
+  }
+  
+  .transcripts-page-header {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .header-content h1 {
+    font-size: 2rem;
+  }
+  
+  .scenario-title {
+    font-size: 1.5rem;
+  }
+  
+  .scenario-description {
+    font-size: 1rem;
+  }
+  
+  .transcripts-content {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .transcripts-page-header {
+    padding: 0 0.75rem;
+  }
+  
+  .header-content h1 {
+    font-size: 1.75rem;
+  }
+  
+  .scenario-title {
+    font-size: 1.25rem;
+  }
+  
+  .transcripts-content {
+    padding: 0 0.75rem;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .transcripts-page {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  }
+  
+  .header-content h1 {
+    color: #f7fafc;
+  }
+  
+  .scenario-title {
+    color: #e2e8f0;
+  }
+  
+  .scenario-description {
+    color: #a0aec0;
+  }
+  
+  .back-button {
+    color: #90cdf4;
+  }
+  
+  .back-button:hover {
+    color: #63b3ed;
+  }
+}

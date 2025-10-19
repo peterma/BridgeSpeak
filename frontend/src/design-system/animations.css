@@ -1,0 +1,342 @@
+/**
+ * Child-Friendly Animation Styles - Story 5.2
+ * 
+ * CSS animations and transitions designed for child users with emphasis on
+ * gentle movements, positive feedback, and accessibility compliance.
+ */
+
+/* ===== BUTTON INTERACTION ANIMATIONS ===== */
+
+.child-friendly-button {
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform-origin: center;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.child-friendly-button:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 6px 16px var(--hover-overlay);
+}
+
+.child-friendly-button:active {
+  transform: translateY(0) scale(0.98);
+  transition-duration: 0.1s;
+}
+
+.child-friendly-button:focus {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* Gentle ripple effect for button clicks */
+.child-friendly-button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.child-friendly-button:active::after {
+  width: 200px;
+  height: 200px;
+}
+
+/* ===== CELEBRATION ANIMATIONS ===== */
+
+@keyframes confetti-fall {
+  0% { 
+    transform: translateY(-100vh) rotate(0deg) scale(1); 
+    opacity: 1; 
+  }
+  50% {
+    opacity: 1;
+  }
+  100% { 
+    transform: translateY(100vh) rotate(720deg) scale(0.5); 
+    opacity: 0; 
+  }
+}
+
+.confetti-piece {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  animation: confetti-fall 3s linear forwards;
+}
+
+@keyframes sparkle-twinkle {
+  0% { 
+    transform: scale(0) rotate(0deg); 
+    opacity: 0; 
+  }
+  50% { 
+    transform: scale(1.2) rotate(180deg); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: scale(0) rotate(360deg); 
+    opacity: 0; 
+  }
+}
+
+@keyframes hearts-float {
+  0% { 
+    transform: translateY(0) scale(0) rotate(0deg); 
+    opacity: 0; 
+  }
+  10% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% { 
+    transform: translateY(-100vh) scale(1.2) rotate(360deg); 
+    opacity: 0; 
+  }
+}
+
+/* ===== LOADING ANIMATIONS ===== */
+
+.friendly-loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.bouncing-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.bouncing-dots .dot {
+  width: 12px;
+  height: 12px;
+  background: var(--primary-blue);
+  border-radius: 50%;
+  animation: bounce 1.4s ease-in-out infinite;
+}
+
+.bouncing-dots .dot:nth-child(1) { 
+  animation-delay: -0.32s; 
+  background: var(--primary-blue);
+}
+.bouncing-dots .dot:nth-child(2) { 
+  animation-delay: -0.16s; 
+  background: var(--secondary-yellow);
+}
+.bouncing-dots .dot:nth-child(3) { 
+  animation-delay: 0; 
+  background: var(--accent-green);
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { 
+    transform: translateY(0); 
+  }
+  40% { 
+    transform: translateY(-10px); 
+  }
+  60% { 
+    transform: translateY(-5px); 
+  }
+}
+
+.loading-message {
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0;
+  animation: gentle-pulse 2s ease-in-out infinite;
+}
+
+/* ===== ATTENTION AND FEEDBACK ANIMATIONS ===== */
+
+@keyframes gentle-pulse {
+  0%, 100% { 
+    opacity: 1; 
+    transform: scale(1); 
+  }
+  50% { 
+    opacity: 0.7; 
+    transform: scale(1.02); 
+  }
+}
+
+.gentle-pulse {
+  animation: gentle-pulse 1s ease-in-out 2;
+}
+
+/* Success state animations */
+@keyframes success-glow {
+  0% { 
+    box-shadow: 0 0 0 0 var(--accent-green); 
+  }
+  50% { 
+    box-shadow: 0 0 20px 10px rgba(136, 229, 163, 0.4); 
+  }
+  100% { 
+    box-shadow: 0 0 0 0 var(--accent-green); 
+  }
+}
+
+.success-glow {
+  animation: success-glow 1s ease-in-out;
+}
+
+/* Gentle shake for attention (not error) */
+@keyframes gentle-wiggle {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-2px); }
+  75% { transform: translateX(2px); }
+}
+
+.gentle-wiggle {
+  animation: gentle-wiggle 0.5s ease-in-out 2;
+}
+
+/* ===== MICRO-INTERACTION ENHANCEMENTS ===== */
+
+/* Gentle scale on focus for better accessibility */
+.child-friendly-focus:focus {
+  transform: scale(1.05);
+  transition: transform 0.2s ease;
+}
+
+/* Floating label animation */
+@keyframes float-label {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-3px); }
+}
+
+.floating-label {
+  animation: float-label 3s ease-in-out infinite;
+}
+
+/* Icon bounce animation */
+@keyframes icon-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+.icon-bounce {
+  animation: icon-bounce 1s ease-in-out;
+}
+
+/* ===== ACCESSIBILITY SUPPORT ===== */
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .child-friendly-button,
+  .confetti-piece,
+  .bouncing-dots .dot,
+  .loading-message,
+  .gentle-pulse,
+  .success-glow,
+  .gentle-wiggle,
+  .child-friendly-focus,
+  .floating-label,
+  .icon-bounce {
+    animation: none !important;
+    transition: none !important;
+  }
+  
+  .child-friendly-button:hover {
+    transform: none;
+    background-color: var(--primary-blue-light);
+    box-shadow: none;
+  }
+  
+  .child-friendly-button:active {
+    transform: none;
+    background-color: var(--primary-blue-dark);
+  }
+  
+  .child-friendly-button::after {
+    display: none;
+  }
+  
+  /* Provide alternative feedback for reduced motion */
+  .child-friendly-button:hover {
+    border: 2px solid var(--primary-blue);
+  }
+  
+  .success-glow {
+    background-color: var(--accent-green-light);
+    border: 2px solid var(--accent-green);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .child-friendly-button:hover {
+    background-color: ButtonFace;
+    color: ButtonText;
+    border: 2px solid ButtonText;
+  }
+  
+  .bouncing-dots .dot {
+    background: ButtonText;
+  }
+  
+  .confetti-piece {
+    background: Highlight !important;
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+.animate-on-enter {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fade-in-up 0.6s ease forwards;
+}
+
+@keyframes fade-in-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-enter:nth-child(1) { animation-delay: 0.1s; }
+.animate-on-enter:nth-child(2) { animation-delay: 0.2s; }
+.animate-on-enter:nth-child(3) { animation-delay: 0.3s; }
+.animate-on-enter:nth-child(4) { animation-delay: 0.4s; }
+.animate-on-enter:nth-child(5) { animation-delay: 0.5s; }
+
+/* Smooth transition utility */
+.smooth-transition {
+  transition: all 0.3s ease;
+}
+
+/* Gentle hover lift utility */
+.gentle-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--hover-overlay);
+}
+
+/* Disable animations utility */
+.no-animations * {
+  animation: none !important;
+  transition: none !important;
+}

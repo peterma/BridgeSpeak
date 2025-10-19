@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "scenario_id": "inviting-to-play",
+    "transcript_id": "inviting-play_variant1_first-class",
+    "age_group": "first-class",
+    "difficulty_variant": "variant1",
+    "created_at": "2025-10-18T15:00:00.000000+00:00",
+    "description": "Inviting others to play inclusively for first-class",
+    "estimated_duration": null
+  },
+  "transcript": [
+    {
+      "phase": "chinese_comfort",
+      "speaker": "xiao_mei",
+      "content": "你好! 我是小美。让我们学习如何邀请别人一起玩。",
+      "language": "zh-CN",
+      "timestamp": 1760574005.6508672,
+      "encouragement_level": "gentle"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "Say: 'Come play with us!'",
+      "language": "en-IE",
+      "timestamp": 1760574008.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Come play with us!",
+      "language": "en-IE",
+      "timestamp": 1760574011.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "太棒了! Including others makes everyone happy!",
+      "language": "mixed",
+      "timestamp": 1760574014.6508672,
+      "encouragement_level": "enthusiastic"
+    },
+    {
+      "phase": "english_demonstration",
+      "speaker": "xiao_mei",
+      "content": "You can also say: 'Would you like to join our game?'",
+      "language": "en-IE",
+      "timestamp": 1760574017.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "child_practice",
+      "speaker": "child",
+      "content": "Would you like to join our game?",
+      "language": "en-IE",
+      "timestamp": 1760574020.6508672,
+      "encouragement_level": "standard"
+    },
+    {
+      "phase": "encouraging_feedback",
+      "speaker": "xiao_mei",
+      "content": "好棒! Being inclusive makes you a great friend!",
+      "language": "mixed",
+      "timestamp": 1760574023.6508672,
+      "encouragement_level": "enthusiastic"
+    }
+  ]
+}
